@@ -12,6 +12,6 @@ body {
     color: white;
     align-content: center;
     width: 100%;
-    max-width: min(1000px, 75vw);
+    max-width: min(1000px, 95vw);
     margin: 0 auto;
 }
