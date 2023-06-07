@@ -8,6 +8,14 @@ html {
     background-color: #42303e;
 }
 
+a {
+    color: #ff9bba;
+}
+
+a:visited {
+    color: #ff6b99;
+}
+
 body {
     color: white;
     align-content: center;
