@@ -9,6 +9,8 @@ Gem::Specification.new do |spec|
   spec.summary       = "Cool Theme for Jekyll with Monospaced Fonts and Cute Colors."
   spec.homepage      = "https://github.com/justalemon/Octi"
   spec.license       = "MIT"
+  
+  spec.metadata["plugin_type"] = "theme"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
