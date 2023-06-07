@@ -2,7 +2,10 @@
     <a href="/">Home</a>
 
     <div id="nav-pages" >
-        <a href="/projects">Projects</a>
-        <a href="/about">About</a>
+        {%- for page in site.pages -%}
+            {% if page.navigation %}
+                <a href="{{ page.url }}">{{ page.navigation }}</a>
+            {% endif %}
+        {%- endfor -%}
     </div>
 </div>
