@@ -16,6 +16,10 @@ a:visited {
     color: #ff6b99;
 }
 
+#nav {
+    margin-top: 10px;
+}
+
 #nav-pages {
     display: flex;
     float: right;
