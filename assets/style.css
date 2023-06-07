@@ -16,6 +16,12 @@ a:visited {
     color: #ff6b99;
 }
 
+#nav-pages {
+    display: flex;
+    float: right;
+    gap: 10px;
+}
+
 body {
     color: white;
     align-content: center;
