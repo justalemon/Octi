@@ -18,11 +18,13 @@ a:visited {
 
 #nav {
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #nav-pages {
     display: flex;
-    float: right;
+    justify-content: flex-end;
     gap: 10px;
     flex-wrap: wrap;
     max-width: 50vw;
