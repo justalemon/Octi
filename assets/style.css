@@ -1,0 +1,11 @@
+html {
+    background-color: #3B2A34;
+}
+
+body {
+    color: white;
+    align-content: center;
+    width: 100%;
+    max-width: min(1000px, 75vw);
+    margin: 0 auto;
+}
