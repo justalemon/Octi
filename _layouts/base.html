@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
         {% if page.title %}
             <title>{{ page.title }} - {{ site.title }}</title>
+        {% elsif layout.title %}
+            <title>{{ layout.title }} - {{ site.title }}</title>
         {% else %}
             <title>{{ site.title }}</title>
         {% endif %}
