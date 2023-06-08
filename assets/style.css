@@ -39,6 +39,18 @@ a:visited {
     width: min(75vw, 750px, 100%);
 }
 
+.post-title {
+    color: #ffcaf1;
+}
+
+.post-title > a:visited {
+    color: #f57aa0;
+}
+
+.post-date {
+    color: #eeceff;
+}
+
 body {
     color: white;
     align-content: center;
