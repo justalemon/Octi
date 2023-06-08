@@ -30,6 +30,14 @@ a:visited {
     max-width: 50vw;
 }
 
+.nav-link {
+    color: #ffb3cb;
+}
+
+.nav-link:visited {
+    color: #ffb3cb;
+}
+
 .project-img {
     display: block;
     margin-left: auto;
