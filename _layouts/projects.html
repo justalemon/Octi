@@ -1,0 +1,23 @@
+---
+layout: base
+---
+
+<h1>Projects</h1>
+
+{%- for project in site.projects -%}
+    <details>
+        <summary>{{ project.name }}</summary>
+        {% if project.image %}
+            <img src="{{ project.image }}" alt="Demo of {{ project.name }}">
+        {% endif %}
+        <p>{{ project.description }}</p>
+        {% if project.urls %}
+            <p>More Information:</p>
+            <ul>
+            {%- for url in project.urls -%}
+                <li><a href="{{ url[1] }}">{{ url[0] }}</a></li>
+            {%- endfor -%}
+            </ul>
+        {% endif %}
+    </details>
+{%- endfor -%}
