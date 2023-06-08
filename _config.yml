@@ -5,6 +5,8 @@ theme: octi
 exclude:
   - ".idea/"
 
+permalink: /posts/:title/
+
 projects:
   - name: "LemonUI for .NET"
     image: "assets/images/test/lemonui.png"
