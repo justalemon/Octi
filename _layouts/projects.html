@@ -8,7 +8,7 @@ layout: base
     <details>
         <summary>{{ project.name }}</summary>
         {% if project.image %}
-            <img src="{{ project.image }}" alt="Demo of {{ project.name }}">
+            <img class="project-img" src="{{ project.image | relative_url }}" alt="Demo of {{ project.name }}">
         {% endif %}
         <p>{{ project.description }}</p>
         {% if project.urls %}

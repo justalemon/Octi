@@ -30,6 +30,13 @@ a:visited {
     max-width: 50vw;
 }
 
+.project-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(75vw, 750px, 100%);
+}
+
 body {
     color: white;
     align-content: center;

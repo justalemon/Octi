@@ -7,7 +7,7 @@ exclude:
 
 projects:
   - name: "LemonUI for .NET"
-    image: "lemonui.png"
+    image: "assets/images/test/lemonui.png"
     category:
       commission: false
       foss: true
