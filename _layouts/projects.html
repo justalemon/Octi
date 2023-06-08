@@ -5,17 +5,17 @@ layout: base
 <h1>Projects</h1>
 
 {%- for project in site.projects -%}
-    <details>
-        <summary>{{ project.name }}</summary>
+    <details class="project">
+        <summary class="project-summary">{{ project.name }}</summary>
         {% if project.image %}
             <img class="project-img" src="{{ project.image | relative_url }}" alt="Demo of {{ project.name }}">
         {% endif %}
-        <p>{{ project.description }}</p>
+        <p class="project-description">{{ project.description }}</p>
         {% if project.urls %}
             <p>More Information:</p>
-            <ul>
+            <ul class="project-urls">
             {%- for url in project.urls -%}
-                <li><a href="{{ url[1] }}">{{ url[0] }}</a></li>
+                <li><a class="project-url" href="{{ url[1] }}">{{ url[0] }}</a></li>
             {%- endfor -%}
             </ul>
         {% endif %}
