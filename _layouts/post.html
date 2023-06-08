@@ -5,4 +5,6 @@ title: Posts
 
 {%- include header.html -%}
 
+<p>Posted on <span class="post-date">{{ page.date | date: "%b %-d, %Y" }} </span>{%- if page.author -%} by {{ page.author }}{%- endif -%}</p>
+
 {{ content }}
