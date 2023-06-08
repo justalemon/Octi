@@ -1,0 +1,23 @@
+name: Build Gem
+on:
+  release:
+    types:
+      - created
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1.151.0
+        with:
+          ruby-version: "3.2.2"
+          bundler-cache: true
+      - run: gem build
+      - uses: actions/upload-artifact@v3.1.2
+        with:
+          name: ${{ github.event.repository.name }}
+          path: "*.gem"
+          if-no-files-found: error
