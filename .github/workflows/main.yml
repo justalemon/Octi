@@ -33,7 +33,8 @@ jobs:
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
-      - run: jekyll build
+      - run: bundle install
+      - run: bundle exec jekyll build
       - uses: actions/upload-pages-artifact@v2.0.0
         with:
           path: "_site"
