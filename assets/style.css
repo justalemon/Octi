@@ -20,6 +20,12 @@ a:visited {
     color: #ff6b99;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
 #nav {
     margin-top: 10px;
     display: flex;
