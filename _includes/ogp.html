@@ -1,0 +1,5 @@
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% elsif layout.title %}{{ layout.title }}{% else %}{{ site.title }}{% endif %}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+{% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
+<meta property="og:type" content="website" />
+{% if page.thumbnail %}<meta property="og:image" content="{{ page.thumbnail }}" />{% endif %}
