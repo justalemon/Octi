@@ -75,10 +75,12 @@ footer {
 
 body {
     color: white;
-    align-content: center;
     width: 100%;
     max-width: min(1000px, 95vw);
     margin: 0 auto;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 summary {
