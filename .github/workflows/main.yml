@@ -6,6 +6,12 @@ on:
   push:
   pull_request:
 
+permissions:
+  # releases
+  contents: write
+  # ghcr.io
+  packages: write
+
 jobs:
   build:
     runs-on: ubuntu-22.04
