@@ -66,3 +66,7 @@ body {
     max-width: min(1000px, 95vw);
     margin: 0 auto;
 }
+
+summary {
+    cursor: pointer;
+}
