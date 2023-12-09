@@ -46,6 +46,8 @@ jobs:
       - run: gem push --key github --host https://rubygems.pkg.github.com/${{ github.repository_owner }} *.gem
   deploy:
     runs-on: ubuntu-22.04
+    needs:
+      - build
     steps:
       - uses: actions/checkout@v4.1.1
       - uses: ruby/setup-ruby@v1.161.0
