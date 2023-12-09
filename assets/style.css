@@ -5,6 +5,9 @@
 
 * {
     font-family: "JetBrains Mono", monospace !important;
+}
+
+html {
     background-color: #42303e;
 }
 
