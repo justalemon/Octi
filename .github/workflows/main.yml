@@ -42,7 +42,7 @@ jobs:
         with:
           name: ${{ github.event.repository.name }}
           path: .
-      - run: "mkdir -p ~/.gem && printf -- '---\n:github: ${{ github.token }}\n' > ~/.gem/credentials"
+      - run: "mkdir -p ~/.gem && printf -- '---\n:github: ${{ github.token }}\n' > ~/.gem/credentials && chmod 0600 ~/.gem/credentials"
       - run: gem push --key github --host https://rubygems.pkg.github.com/${{ github.repository_owner }} *.gem
   deploy:
     runs-on: ubuntu-22.04
