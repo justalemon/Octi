@@ -7,6 +7,13 @@ exclude:
 
 permalink: /posts/:title/
 
+socials:
+  twitter: ItsLemonChan
+  twitch: itslemonchan
+  github: justalemon
+  youtube_channel: UCEOwsaYl9b_oJ9VPnpFSfcg
+  youtube_username: "" # for channels like @LinusTechTips
+
 projects:
   - name: "LemonUI for .NET"
     image: "assets/images/test/lemonui.png"
