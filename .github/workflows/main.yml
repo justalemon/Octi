@@ -13,6 +13,8 @@ permissions:
   contents: write
   # ghcr.io
   packages: write
+  # idk what this is but actions/deploy-pages needs it
+  id-token: write
 
 jobs:
   build:
