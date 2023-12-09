@@ -13,7 +13,7 @@ socials:
   github: justalemon
   gitlab: itslemonchan
   youtube_channel: UCEOwsaYl9b_oJ9VPnpFSfcg
-  youtube_username: "" # for channels like @LinusTechTips
+  # youtube_username: "" # for channels like @LinusTechTips
 
 projects:
   - name: "LemonUI for .NET"
