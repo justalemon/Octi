@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.license = "MIT"
   
   spec.metadata["plugin_type"] = "theme"
+  spec.metadata["github_repo"] = "https://github.com/justalemon/Octi.git"
 
   spec.files = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README.md)!i) }
 
