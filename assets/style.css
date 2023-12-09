@@ -59,6 +59,10 @@ a:visited {
     color: #eeceff;
 }
 
+.highlight {
+    background-color: transparent !important;
+}
+
 body {
     color: white;
     align-content: center;
