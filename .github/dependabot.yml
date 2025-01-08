@@ -9,14 +9,6 @@ updates:
       - "priority: p3 low"
       - "type: dependencies"
       - "status: acknowledged"
-  - package-ecosystem: docker
-    directory: /
-    schedule: 
-      interval: daily
-    labels:
-      - "priority: p3 low"
-      - "type: dependencies"
-      - "status: acknowledged"
   - package-ecosystem: github-actions
     directory: /
     schedule: 
