@@ -20,7 +20,7 @@ jobs:
   build:
     strategy:
       matrix:
-        node-version: [24.x]
+        node-version: [22.x]
         ruby-version: [3.3.6]
         pnpm-version: [10]
     runs-on: ubuntu-22.04
