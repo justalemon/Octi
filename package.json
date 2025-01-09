@@ -4,7 +4,8 @@
     "description": "Cool Theme for Jekyll with Monospaced Fonts and Cute Colors.",
     "main": "index.js",
     "scripts": {
-        "build": "webpack"
+        "build": "webpack",
+        "watch": "webpack --watch"
     },
     "keywords": [],
     "author": "Hannele Ruiz",
