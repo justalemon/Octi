@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "LemonUI for .NET"
-image: "assets/img/lemonui.png"
+images: ["assets/img/lemonui.png"]
 is_commission: false
 is_foss: true
 ---

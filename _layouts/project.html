@@ -5,9 +5,9 @@ title: Projects
 
 {%- include header.html -%}
 
-{% if page.image %}
+{% if page.images %}
 <div class="project-container">
-    <img class="project-img" src="{{ page.image | relative_url }}">
+    <img class="project-img" src="{{ page.images[0] | relative_url }}">
 </div>
 {% endif %}
 

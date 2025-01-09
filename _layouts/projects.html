@@ -8,7 +8,7 @@ title: Projects
 {% if site.projects %}
     <div class="projects">
     {%- for project in site.projects -%}
-        <div class="project" style="{% if project.image %}background-image: url('{{ project.image | relative_url }}'){% else %}background-color: var(--even-darker){% endif %}">
+        <div class="project" style="{% if project.images %}background-image: url('{{ project.images[0] | relative_url }}'){% else %}background-color: var(--even-darker){% endif %}">
             <a class="project-name" href="{{ project.url }}">{{ project.title }}</a>
         </div>
     {%- endfor -%}
