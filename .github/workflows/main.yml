@@ -77,13 +77,12 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
-      - run: bundle install
-      - run: bundle exec jekyll build
       - uses: actions/download-artifact@v4.1.8
         with:
           name: ${{ github.event.repository.name }}
           path: .
       - run: gem install *.gem
+      - run: jekyll build
       - uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: "_site"
