@@ -64,6 +64,9 @@ jobs:
       - run: "mkdir -p ~/.gem && printf -- '---\n:github: ${{ github.token }}\n' > ~/.gem/credentials && chmod 0600 ~/.gem/credentials"
       - run: gem push --key github --host https://rubygems.pkg.github.com/${{ github.repository_owner }} *.gem
   deploy:
+    strategy:
+      matrix:
+        ruby-version: [3.3.6]
     runs-on: ubuntu-22.04
     needs:
       - build
@@ -76,6 +79,11 @@ jobs:
           bundler-cache: true
       - run: bundle install
       - run: bundle exec jekyll build
+      - uses: actions/download-artifact@v4.1.8
+        with:
+          name: ${{ github.event.repository.name }}
+          path: .
+      - run: gem install *.gem
       - uses: actions/upload-pages-artifact@v3.0.1
         with:
           path: "_site"
