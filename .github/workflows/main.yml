@@ -73,7 +73,7 @@ jobs:
         with:
           name: ${{ github.event.repository.name }}
           path: .
-      - run: bundle install *.gem
+      - run: gem install *.gem
       - run: bundle run jekyll build
       - uses: actions/upload-pages-artifact@v3.0.1
         with:
