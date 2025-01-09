@@ -5,20 +5,12 @@ title: Projects
 
 {%- include header.html -%}
 
-{%- for project in site.projects -%}
-    <details class="project">
-        <summary class="project-summary">{{ project.name }}</summary>
-        {% if project.image %}
-            <img class="project-img" src="{{ project.image | relative_url }}" alt="Demo of {{ project.name }}">
-        {% endif %}
-        <p class="project-description">{{ project.description }}</p>
-        {% if project.urls %}
-            <p>More Information:</p>
-            <ul class="project-urls">
-            {%- for url in project.urls -%}
-                <li><a class="project-url" href="{{ url[1] }}">{{ url[0] }}</a></li>
-            {%- endfor -%}
-            </ul>
-        {% endif %}
-    </details>
-{%- endfor -%}
+{% if site.projects %}
+    <div class="projects">
+    {%- for project in site.projects -%}
+        <div class="project" {% if project.image %}style="background-image: url('{{ project.image | relative_url }}')"{% endif %}>
+            <a class="project-name" href="{{ project.url }}">{{ project.title }}</a>
+        </div>
+    {%- endfor -%}
+    </div>
+{% endif %}

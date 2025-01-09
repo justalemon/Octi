@@ -46,13 +46,49 @@ footer {
     color: #ffb3cb;
 }
 
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.project {
+    width: 30vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.project-name {
+    backdrop-filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+}
+
+.project-name:hover {
+    backdrop-filter: none;
+}
+
+.project-name:visited, .project-name:hover, .project-name:active {
+    color: inherit;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+}
+
 .project-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    width: min(75vw, 750px, 100%);
+    width: 50%;
 }
 
 .post-title {
