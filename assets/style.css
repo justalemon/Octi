@@ -1,19 +1,29 @@
 @import "fonts/jetbrainsmono/jetbrainsmono.css";
 
+:root {
+    --white: white;
+    --even-lighter: #ffcaf1;
+    --lighter: #ffb3cb;
+    --light: #ff9bba;
+    --darker: #ff6b99;
+    --even-darker: #ad4b69;
+    --dark: #42303e;
+}
+
 * {
     font-family: "JetBrains Mono", monospace !important;
 }
 
 html {
-    background-color: #42303e;
+    background-color: var(--dark);
 }
 
 a {
-    color: #ff9bba;
+    color: var(--light);
 }
 
 a:visited {
-    color: #ff6b99;
+    color: var(--darker);
 }
 
 footer {
@@ -39,11 +49,11 @@ footer {
 }
 
 .nav-link {
-    color: #ffb3cb;
+    color: var(--lighter);
 }
 
 .nav-link:visited {
-    color: #ffb3cb;
+    color: var(--lighter);
 }
 
 .projects {
@@ -69,7 +79,7 @@ footer {
     height: 100%;
     text-align: center;
     align-content: center;
-    color: white;
+    color: var(--white);
     text-decoration: none;
     text-shadow: 2px 2px 5px black;
 }
@@ -92,15 +102,15 @@ footer {
 }
 
 .post-title {
-    color: #ffcaf1;
+    color: var(--even-lighter);
 }
 
 .post-title > a:visited {
-    color: #f57aa0;
+    color: var(--darker);
 }
 
 .post-date {
-    color: #eeceff;
+    color: var(--even-lighter);
 }
 
 .highlight {
@@ -108,7 +118,7 @@ footer {
 }
 
 body {
-    color: white;
+    color: var(--white);
     width: 100%;
     max-width: min(1000px, 95vw);
     margin: 0 auto;
