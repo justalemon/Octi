@@ -19,7 +19,8 @@ And more!
 
 ## Installation
 
-TBD
+* For users: TBD
+* For developers: Run `bundle install`.
 
 ## Usage
 
