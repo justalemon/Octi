@@ -33,7 +33,6 @@ jobs:
       - uses: ruby/setup-ruby@v1.207.0
         with:
           ruby-version: "3.3.6"
-          bundler-cache: true
       - uses: justalemon/VersionPatcher@v0.8
         with:
           version: 0.0.1.alpha.${{ github.run_number }}
@@ -68,7 +67,6 @@ jobs:
       - uses: ruby/setup-ruby@v1.207.0
         with:
           ruby-version: "3.3.6"
-          bundler-cache: true
       - uses: actions/download-artifact@v4.1.8
         with:
           name: ${{ github.event.repository.name }}
