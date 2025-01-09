@@ -1,0 +1,14 @@
+---
+layout: base
+title: Projects
+---
+
+{%- include header.html -%}
+
+{% if page.image %}
+<div class="project-container">
+    <img class="project-img" src="{{ page.image | relative_url }}">
+</div>
+{% endif %}
+
+{{ content }}
