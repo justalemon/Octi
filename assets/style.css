@@ -98,7 +98,7 @@ footer {
 }
 
 .project-img {
-    width: 50%;
+    max-width: 75vh;
 }
 
 .post-title {
