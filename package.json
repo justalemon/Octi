@@ -1,0 +1,20 @@
+{
+    "name": "octi",
+    "version": "0.0.1",
+    "description": "Cool Theme for Jekyll with Monospaced Fonts and Cute Colors.",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack"
+    },
+    "keywords": [],
+    "author": "Hannele Ruiz",
+    "license": "MIT",
+    "dependencies": {
+        "@glidejs/glide": "^3.7.1",
+        "ts-loader": "^9.5.1",
+        "webpack": "^5.97.1"
+    },
+    "devDependencies": {
+        "webpack-cli": "^6.0.1"
+    }
+}
