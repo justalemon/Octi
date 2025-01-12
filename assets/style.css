@@ -99,7 +99,7 @@ footer {
 }
 
 .project-img {
-    max-width: 75vh;
+    max-width: min(75vh, 95vw);
 }
 
 .post-title {
