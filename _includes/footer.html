@@ -1,4 +1,5 @@
 {% assign size = "37" %}
+{% if site.socials.discord %}<a href="https://discord.gg/{{ site.socials.discord }}"><img src="{{ '/assets/img/social/discord.svg' | relative_url }}" width="{{ size }}" height="{{ size }}" /></a>{% endif %}
 {% if site.socials.twitter %}<a href="https://twitter.com/{{ site.socials.twitter }}"><img src="{{ '/assets/img/social/twitter.svg' | relative_url }}" width="{{ size }}" height="{{ size }}" /></a>{% endif %}
 {% if site.socials.twitch %}<a href="https://twitch.tv/{{ site.socials.twitch }}"><img src="{{ '/assets/img/social/twitch.svg' | relative_url }}" width="{{ size }}" height="{{ size }}" /></a>{% endif %}
 {% if site.socials.github %}<a href="https://github.com/{{ site.socials.github }}"><img src="{{ '/assets/img/social/github.svg' | relative_url }}" width="{{ size }}" height="{{ size }}" /></a>{% endif %}
