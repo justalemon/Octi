@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: "22.x"
           cache: pnpm
-      - uses: ruby/setup-ruby@v1.207.0
+      - uses: ruby/setup-ruby@v1.228.0
         with:
           ruby-version: "3.3.6"
       - uses: justalemon/VersionPatcher@v0.8
@@ -64,7 +64,7 @@ jobs:
     if: ${{ format('refs/heads/{0}', github.event.repository.default_branch) == github.ref || startsWith(github.ref, 'refs/tags/') }}
     steps:
       - uses: actions/checkout@v4.2.2
-      - uses: ruby/setup-ruby@v1.207.0
+      - uses: ruby/setup-ruby@v1.228.0
         with:
           ruby-version: "3.3.6"
       - uses: actions/download-artifact@v4.1.8
