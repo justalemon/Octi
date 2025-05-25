@@ -34,6 +34,12 @@ footer {
     padding-bottom: 2dvh;
 }
 
+img {
+    max-width: -webkit-fill-available;
+    max-width: -moz-available;
+    max-width: 100%;
+}
+
 #nav {
     padding-top: 10px;
     display: flex;
