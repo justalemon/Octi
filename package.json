@@ -13,7 +13,7 @@
     "dependencies": {
         "@glidejs/glide": "^3.7.1",
         "ts-loader": "^9.5.2",
-        "webpack": "^5.99.9"
+        "webpack": "^5.100.2"
     },
     "devDependencies": {
         "webpack-cli": "^6.0.1"
