@@ -72,7 +72,7 @@ jobs:
           name: ${{ github.event.repository.name }}
           path: .
       - run: gem install *.gem
-      - run: gem install csv json bigdecimal rake # Change from Ruby 3 to Ruby 4
+      - run: gem install csv json:~>2.21.2 bigdecimal rake # Change from Ruby 3 to Ruby 4
       - run: jekyll build
       - uses: actions/upload-pages-artifact@v4.0.0
         with:
