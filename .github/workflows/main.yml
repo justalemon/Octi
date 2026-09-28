@@ -4,6 +4,7 @@ on:
       - created
   push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   # pages
